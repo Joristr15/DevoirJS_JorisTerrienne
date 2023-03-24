@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <script type="module" src="./assets/script/liste.js"></script>
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Liste des joueurs français</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/newjoueur.html">Nouveau joueur</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <div class="text-center Ajout"></div>
+    <br>
+    <article>
+
+      <div class="row px-5">
+        <div class="col-12">
+          <table class="table table-bordered ">
+            <thead class="text-center table-dark" >
+              <tr>
+                <th>Joueur</th>
+                <th>Club</th>
+                <th>Date de naissance</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+              </tr>
+            </thead>
+            <tbody id="listJoueur">
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.Titre1,.Titre2,.Titre3{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(145, 145, 184);
+    color: rgb(253, 253, 253);
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-left : 3px solid pink;
+    border-right : 3px solid pink;
+    border-top : 3px solid pink;
+}
+
+.Contenu1,.Contenu2,.Contenu3{
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(145, 145, 184);
+    color: rgb(253, 253, 253);
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-left : 3px solid pink;
+    border-right : 3px solid pink;
+    border-top : 3px solid pink;
+    display: none;
+
+}

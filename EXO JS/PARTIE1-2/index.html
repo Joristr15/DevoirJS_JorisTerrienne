@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+   <link rel="shortcut icon" type="image/ico" href="img/favicon.gif" />
+
+   <link rel="stylesheet" type="text/css" href="style.css" />
+
+   <title> EXO JS </title>
+ </head>
+ <body>
+  <script>
+      /* //EXERCICE 1
+        var nombre1 = +prompt("Entez un nombre : ");
+        var nombre2 = +prompt("Entez un second nombre : ");
+        console.log(nombre1 - nombre2);
+        console.log(nombre1 + nombre2);
+        console.log(nombre1 * nombre2);
+        console.log(nombre1 / nombre2); */
+
+      /* //EXERCIE 2
+        var prix1 = +prompt("Entez un prix HT : ");
+        var prixHT = 5 + prix1 + (1960 /  prix1);
+        console.log(prixHT); */
+
+        /* //EXERCICE 3
+        var temperature1 = +prompt("Entrez une temperature à convertir : ");
+        var temperatureF = temperature1 * 1.8 + 32;
+        console.log(temperatureF); */
+
+       /*  //EXERCICE 4
+        var poids = +prompt("Entrez votre poids");
+        var taille = +prompt("Entrez votre taille (en m) ");
+        var IMC = poids / taille**2;
+        console.log(IMC); */
+
+        /* //EXERCICE 5
+        var nb1 = 5;
+        var nb2 = 3;
+        [nb1,nb2] = [nb2,nb1];
+        console.log(nb1,nb2); */
+
+        /* //EXERCICE 6
+        let  maVoiture = {
+        marque : "BMW",
+        modele : "Serie 1",
+        abs    : true,
+        kilometrage : 60000,
+        finition: {
+          couleur: "Blanc",
+          option: ["Clim","Toit ouvrant","Siege chauffant"],
+          chrome:["Rétroviseur","Jantes","logo"]}
+        };
+        console.log(maVoiture.marque);
+        console.log(maVoiture.finition.couleur);
+        console.log(maVoiture.kilometrage);
+        console.log(maVoiture.abs);
+        console.log(maVoiture.finition.chrome[1]); */
+
+        /* //EXERCICE 7
+        let filmSF = ["Star Trek","Timeless","Une autre vie","Love Death & Robots"];
+        let filmComedie = ["How I Met Your Mother","The Big Bang Theory","Norsemen","Archer"];
+        let filmAnime = ["Rick & Morty","Boruto","Tokyo Ghoul","Death Note"];
+        filmSF.push("Dune")
+        filmAnime.pop();
+        filmAnime.unshift("Attaque des titans");
+        filmComedie.splice(2,1,"Marié 2 enfants et notre belle famille");
+        let filmNetflix = filmSF.concat(filmComedie);
+        filmNetflix = filmNetflix.concat(filmAnime);
+        const recherche = 'Timeless';
+        const indexRecherche = filmNetflix.indexOf(recherche);
+        filmNetflix.splice(indexRecherche,0,"Star Wars")
+        filmNetflix.splice(indexRecherche + 1,0,"Armageddon")
+
+        filmNetflix.splice()
+
+        filmNetflix.forEach(film => {
+          console.log(film);
+        }); */
+
+        /* // PARTIE 2 - EXERCICE 1
+        var annee = +prompt("Entez votre année de naissance : ");
+        var d = new Date();
+        var date = d.getFullYear();
+        var age = date - annee;
+        console.log(age);
+        if (age < 18) {
+          console.log('Vous êtes mineur');
+        }else {
+          console.log('Vous êtes majeur');
+        }; */
+
+        /* // PARTIE 2 - EXERCICE 2
+        var annee = +prompt("Entez votre année de naissance : ");
+        var d = new Date();
+        var date = d.getFullYear();
+        var age = date - annee;
+        var prix = 90;
+    
+        if (age < 12) {
+          prix = 0;
+        }else if (age < 18 && age >= 12) {
+          prix = prix / 2
+        }else if (age > 70) {
+          prix = prix - ((30 * prix) / 100 )
+        }
+
+        console.log(prix); */
+
+        // PARTIE 2 - EXERCICE 3
+
+        /* let i = 0;
+        while (i <= 10) {
+          task(i);
+          i++;
+        }
+        function task(i) {
+          setTimeout(function() {
+              console.log(10 - i );
+          }, 1000 * i);
+        }
+        */
+
+        //PARTIE 2 - EXERCICE 4
+        /* var etage = +prompt("Nombre d'étage : ");
+        for(i=1;i != etage + 1;i++) {
+          //console.log(i);
+          var chaineAfficher = ""
+          for(y=1;y != i+1;y++) {
+            chaineAfficher = chaineAfficher + "1"
+            
+          }
+          console.log(chaineAfficher)
+        }; */
+        
+        /* //PARTIE 2 - EXERCICE 5
+        let nbPremier = [];
+        y = 2
+        var nbDiviseur = 0
+        var somme = 0
+        while (y <= 100) {
+          nbDiviseur = 0
+          for (i = 2;i<y;i++){
+            if (y % i == 0){
+              nbDiviseur++
+            }
+          };
+          if (nbDiviseur == 0) {
+            console.log(y)
+            somme = somme + y
+          }
+          y++
+        }; */
+        /* //PARTIE 2 - EXERCICE 6
+        var nombre = +prompt("Ecrivez un nombre entier : ");
+        var i = nombre - 1;
+        while (i != 1) {
+            nombre = nombre * i
+            i--
+        };
+        console.log(nombre) */
+
+        /* //PARTIE 2 - EXERCICE 8
+
+        var nom = prompt("Prénom : ");
+        var nbEnfants = prompt("Nombre d'enfant : ");
+        var handicap = prompt("Handicap ? (Y or N) : ");
+        if (handicap == "N") {
+          handicap = false;
+        }else if (handicap == "Y") {
+          handicap = true;
+        }
+
+        let  unSalarie = {
+        nom : nom,
+        nbEnfant: nbEnfants,
+        handicap    : handicap,
+        };
+
+        console.log(unSalarie.handicap); */
+
+  </script>
+ </body>
+</html>
